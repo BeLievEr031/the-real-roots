@@ -8,7 +8,7 @@ function MakeFriends() {
                     <img src={GroupImg} alt="group-img" className="w-full h-full object-cover" />
                 </div>
 
-                <div className="sticky top-0 bg-pink-50 z-10 h-screen py-20 px-16">
+                <div className="sticky top-0 bg-pink-50 z-10 py-20 px-16">
                     <div className="grid grid-cols-2">
                         <div>
 

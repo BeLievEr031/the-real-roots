@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import Hero from "../sections/Hero"
 import HowItWorks from "../sections/HowItWorks"
 import MakeFriends from "../sections/MakeFriends"
+import Review from "../sections/Review"
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <Hero />
             <HowItWorks />
             <MakeFriends />
+            <Review />
         </div>
     )
 }
