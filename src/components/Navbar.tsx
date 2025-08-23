@@ -29,7 +29,7 @@ const linksArr = [
 ]
 function Navbar() {
     return (
-        <nav className="px-20 py-5 flex justify-between items-center">
+        <nav className="px-20 py-4 flex justify-between items-center">
             <img src={LogoImg} alt="logo-img" className="w-[150px]" />
             <div className="flex gap-8">
                 {

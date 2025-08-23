@@ -1,7 +1,7 @@
 import HeaderImg from "../assets/header.svg"
 function Header() {
     return (
-        <div className="py-5 flex justify-center items-center gap-5 bg-purple-50">
+        <div className="py-4 flex justify-center items-center gap-5 bg-purple-50 border-b-[0.5px]">
             <img src={HeaderImg} alt={HeaderImg} />
             <div>
                 <h1 className="font-semibold">
