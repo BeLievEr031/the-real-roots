@@ -1,10 +1,9 @@
 import { MoveLeft, MoveRight } from "lucide-react"
-import ReviewCarausal from "../components/ReviewCarausal"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { useRef } from "react";
 
 function Review() {
