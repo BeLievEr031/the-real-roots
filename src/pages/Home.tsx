@@ -6,6 +6,7 @@ import HowItWorks from "../sections/HowItWorks"
 import MakeFriends from "../sections/MakeFriends"
 import Review from "../sections/Review"
 import Banner1Img from "../assets/banner1img.avif"
+import Countries from "../sections/Countries"
 
 function Home() {
     return (
@@ -22,6 +23,7 @@ function Home() {
                 cursiveTitle="100% Guaranteed"
                 btntext="learn more"
             />
+            <Countries />
         </div>
     )
 }
