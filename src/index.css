@@ -3,6 +3,7 @@
 
 @theme {
   --font-dm-sans: "DM Sans", sans-serif;
+  --font-playfair: "Playfair Display", sans-serif;
   --color-text-primery: oklch(28.73% 0 0);
   --color-text-light-purple: oklch(94.05% 0.02 56.69);
 }
