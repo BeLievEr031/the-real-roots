@@ -11,7 +11,7 @@ function Review() {
     const prevRef = useRef<HTMLButtonElement | null>(null);
     const nextRef = useRef<HTMLButtonElement | null>(null);
     return (
-        <section className="h-screen bg-pink-100 px-16 py-20">
+        <section className="bg-pink-100 px-16 py-20">
             <div className="flex justify-between items-end">
                 <div>
                     <h2 className="uppercase font-semibold">Made for women of all ages (21+)</h2>
