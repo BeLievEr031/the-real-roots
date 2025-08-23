@@ -10,7 +10,11 @@ interface Iprop {
 }
 function Banner({ title, cursiveTitle, img, desc1, desc2, btntext }: Iprop) {
     return (
-        <div className="relative w-ful">
+        <div className={
+            clsx("relative w-full", {
+                "h-[40vh] md:h-auto": !desc1,
+            })
+        }>
             {!desc2 && <img src={img} alt={img} className={
                 clsx("w-full object-cover h-full")
             } />}
@@ -21,12 +25,12 @@ function Banner({ title, cursiveTitle, img, desc1, desc2, btntext }: Iprop) {
                 } />
             </div>}
 
-            <div className="absolute top-0 left-0 w-full z-[999] text-white px-16 pt-28">
-                <h1 className="text-6xl">{title}</h1>
-                <p className="font-playfair italic text-6xl mt-3">{cursiveTitle}</p>
-                <p className="w-[70%] mt-5 text-xl">{desc1}</p>
-                <p className="w-[70%] mt-3 text-xl">{desc2}</p>
-                <button className="bg-blue-100 capitalize px-7 py-4 rounded-full mt-10 text-black">
+            <div className="absolute top-0 left-0 w-full z-[999] text-white px-4 pt-14 md:px-16 md:pt-28">
+                <h1 className="text-4xl md:text-6xl">{title}</h1>
+                <p className="font-playfair italic text-4xl md:text-6xl mt-3">{cursiveTitle}</p>
+                <p className="md:w-[70%] mt-5 md:text-xl">{desc1}</p>
+                <p className="md:w-[70%] mt-3 md:text-xl">{desc2}</p>
+                <button className="bg-blue-100 capitalize px-7 py-4 rounded-full mt-4 md:mt-10 text-black">
                     {btntext}
                 </button>
             </div>

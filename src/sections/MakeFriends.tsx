@@ -8,8 +8,8 @@ function MakeFriends() {
                     <img src={GroupImg} alt="group-img" className="w-full h-full object-cover" />
                 </div>
 
-                <div className="sticky top-0 bg-pink-50 z-10 py-20 px-16">
-                    <div className="grid grid-cols-2">
+                <div className="sticky top-0 bg-pink-50 z-10 md:py-20 md:px-16 px-4 py-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2">
                         <div>
 
                             <h2 className="uppercase font-semibold">The easy way to make friends</h2>
@@ -28,7 +28,7 @@ function MakeFriends() {
                             Every RealRoots experience is led by an amazing guide who facilitates deep conversation and fun activities with your group. It's the fast-track way to make a new group of friends, without any of the awkwardness.
                         </div>
                     </div>
-                    <img src={GatheringImg} alt="" className="h-[500px] w-full object-cover mt-10 rounded-3xl" />
+                    <img src={GatheringImg} alt="" className="md:h-[500px] w-full object-cover mt-10 rounded-3xl" />
                 </div>
             </div>
         </section>

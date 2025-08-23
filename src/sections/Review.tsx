@@ -11,8 +11,8 @@ function Review() {
     const prevRef = useRef<HTMLButtonElement | null>(null);
     const nextRef = useRef<HTMLButtonElement | null>(null);
     return (
-        <section className="bg-pink-100 px-16 py-20">
-            <div className="flex justify-between items-end">
+        <section className="bg-pink-100 md:px-16 md:py-20 py-20 px-4">
+            <div className="md:flex justify-between items-end">
                 <div>
                     <h2 className="uppercase font-semibold">Made for women of all ages (21+)</h2>
                     <div className="text-[44px] text-text-primery ">
@@ -34,9 +34,8 @@ function Review() {
                     </button>
                 </div>
 
-
             </div>
-            <div className="mt-10">
+            <div className="mt-4 md:mt-10 pb-10">
                 {/* <ReviewCarausal /> */}
                 <Swiper
                     slidesPerView={4}
@@ -53,13 +52,24 @@ function Review() {
                         // @ts-ignore
                         swiper.params.navigation.nextEl = nextRef.current;
                     }}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1, // 👈 1 card on mobile
+                        },
+                        640: {
+                            slidesPerView: 2, // 👈 optional tablet view
+                        },
+                        1024: {
+                            slidesPerView: 4, // 👈 desktop view
+                        },
+                    }}
                     className="mySwiper"
                 >
                     {/* Example slides */}
                     {Array.from({ length: 5 }).map((_, i) => (
                         <SwiperSlide
                             key={i}
-                            className="px-10 py-12 border rounded-xl font-dm-sans bg-white/35"
+                            className="px-4 md:px-10 py-5 md:py-12 border rounded-xl font-dm-sans bg-white/35"
                         >
                             <p>Paola H., {25 + i}</p>
                             <p>Brooklyn, NY</p>

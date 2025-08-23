@@ -6,9 +6,9 @@ import MaskCard from "../components/MaskCard"
 
 function HowItWorks() {
     return (
-        <section className="px-20 font-dm-sans">
+        <section className="px-2 md:px-20 font-dm-sans">
             <h2 className="uppercase font-semibold">How it works</h2>
-            <div className="text-[44px] text-text-primery">
+            <div className="text-[30px] md:text-[44px] text-text-primery">
                 <h1 className="">Make
                     <i className="font-playfair mx-3">real</i>
                     connections,
@@ -20,7 +20,7 @@ function HowItWorks() {
                 </h1>
             </div>
 
-            <div className="grid grid-cols-2 gap-10 pt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
                 <MaskCard img={Img1} description="Fill out a short survey and get matched with a group of like-minded women in your city." heading="Tell us about yourself" />
                 <MaskCard img={Img2} description="An amazing RealRoots guide will lead your group through guided conversations over a glass of wine or non-alcoholic bev." heading="Meet your group in person" />
                 <MaskCard img={Img3} description="Fill out a short survey and get matched with a group of like-minded women in your city." heading="Tell us about yourself" />

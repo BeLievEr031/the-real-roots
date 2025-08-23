@@ -30,8 +30,8 @@ const linksArr = [
 function Navbar() {
     return (
         <nav className="px-20 py-4 flex justify-between items-center">
-            <img src={LogoImg} alt="logo-img" className="w-[150px]" />
-            <div className="flex gap-8">
+            <img src={LogoImg} alt="logo-img" className="w-[150px] hidden md:inline" />
+            <div className="md:flex gap-8 hidden">
                 {
                     linksArr.map((item) => {
                         return <Link label={item.label} href={item.href} />

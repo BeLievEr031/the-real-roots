@@ -217,7 +217,7 @@ function Countries() {
         }
     }
     return (
-        <div className='bg-white px-16 py-20'>
+        <div className='bg-white px-4 md:px-16 py-10 md:py-20'>
             <h2 className="uppercase font-semibold">Made for women of all ages (21+)</h2>
             <div className="text-[44px] text-text-primery">
                 <h1 className="">Join a
@@ -229,7 +229,7 @@ function Countries() {
                 </h1>
             </div>
 
-            <div className="space-x-3">
+            <div className="md:space-x-3 md:block flex flex-wrap gap-2">
                 <button className={
                     clsx('border border-pink-300 rounded-full px-8 py-2 cursor-pointer', {
                         "bg-pink-50": countriesDetail.country === "USA"
@@ -259,10 +259,10 @@ function Countries() {
                 </button>
             </div>
 
-            <div className="grid grid-cols-3 pt-10 gap-x-7 gap-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 pt-10 gap-x-7 gap-y-4">
                 {
                     countriesDetail.countries.map((item) => {
-                        return <div className="flex justify-between bg-pink-50 px-5 py-6 border border-pink-200 rounded-xl text-xl text-text-primery">
+                        return <div className="flex justify-between bg-pink-50 px-5 py-3 md:py-6 border border-pink-200 rounded-xl text-xl text-text-primery">
                             {item.city}
                             <Plus />
                         </div>
