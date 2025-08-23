@@ -6,6 +6,7 @@ import HowItWorks from "../sections/HowItWorks"
 import MakeFriends from "../sections/MakeFriends"
 import Review from "../sections/Review"
 import Banner1Img from "../assets/banner1img.avif"
+import Banner12Img from "../assets/banner2img.png"
 import Countries from "../sections/Countries"
 
 function Home() {
@@ -24,6 +25,14 @@ function Home() {
                 btntext="learn more"
             />
             <Countries />
+            <Banner
+                img={Banner12Img}
+                title="Join a community of"
+                cursiveTitle="thousands of women like you"
+                desc1="After your 6 week series you’ll become a member of the entire RealRoots grad community in your city, and enjoy weekly members-only events, curated 1-1 friend matches, and an exclusive chat group."
+                desc2="Once you join RealRoots, you’ll have a community of friends for life."
+                btntext="join now"
+            />
         </div>
     )
 }
