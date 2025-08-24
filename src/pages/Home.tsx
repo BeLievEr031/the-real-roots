@@ -14,8 +14,6 @@ import Footer from "../sections/Footer"
 function Home() {
     return (
         <div className='font-dm-sans'>
-            <Header />
-            <Navbar />
             <Hero />
             <HowItWorks />
             <MakeFriends />
@@ -36,7 +34,6 @@ function Home() {
                 btntext="join now"
             />
             <Quiz />
-            <Footer />
         </div>
     )
 }
