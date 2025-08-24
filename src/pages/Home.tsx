@@ -1,6 +1,4 @@
 import Banner from "../components/Banner"
-import Header from "../components/Header"
-import Navbar from "../components/Navbar"
 import Hero from "../sections/Hero"
 import HowItWorks from "../sections/HowItWorks"
 import MakeFriends from "../sections/MakeFriends"
@@ -9,7 +7,6 @@ import Banner1Img from "../assets/banner1img.avif"
 import Banner12Img from "../assets/banner2img.png"
 import Countries from "../sections/Countries"
 import Quiz from "../sections/Quiz"
-import Footer from "../sections/Footer"
 
 function Home() {
     return (

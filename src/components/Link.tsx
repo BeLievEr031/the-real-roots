@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 
 interface IProp {
     label: string;
     href: string;
 
 }
-function Link({ href, label }: IProp) {
+function NavLink({ href, label }: IProp) {
     return (
-        <a
-            href={href}
+        <Link
+            to={href}
             className="relative capitalize 
                         after:content-[''] after:absolute after:left-0 after:bottom-0 
                         after:h-[1px] after:w-full after:bg-black 
@@ -16,8 +17,8 @@ function Link({ href, label }: IProp) {
                         hover:after:scale-x-100 hover:after:origin-left text-md"
         >
             {label}
-        </a>
+        </Link>
     )
 }
 
-export default Link
+export default NavLink

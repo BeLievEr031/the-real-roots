@@ -1,4 +1,5 @@
 import LogoImg from "../assets/logo.svg"
+import NavLink from "./Link"
 import Link from "./Link"
 
 
@@ -18,7 +19,7 @@ const linksArr = [
     },
     {
         label: "Request new city",
-        href: "#"
+        href: "request-new-city"
 
     },
     {
@@ -34,7 +35,7 @@ function Navbar() {
             <div className="md:flex gap-8 hidden">
                 {
                     linksArr.map((item) => {
-                        return <Link label={item.label} href={item.href} />
+                        return <NavLink label={item.label} href={item.href} />
                     })
                 }
             </div>
