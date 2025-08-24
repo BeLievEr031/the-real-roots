@@ -3,6 +3,7 @@ import Root from "./layouts/Root"
 import Home from "./pages/Home";
 import RequestNewCity from "./pages/RequestNewCity";
 import About from "./pages/About";
+import BecomeGuide from "./pages/BecomeGuide";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: "about",
                 element: <About />
+            },
+            {
+                path: "become-a-guide",
+                element: <BecomeGuide />
             },
         ]
     }

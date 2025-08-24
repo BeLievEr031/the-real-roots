@@ -13,7 +13,7 @@ const linksArr = [
     },
     {
         label: "Become a guide",
-        href: "#"
+        href: "become-a-guide"
 
     },
     {
