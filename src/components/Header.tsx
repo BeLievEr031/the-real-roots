@@ -1,3 +1,4 @@
+import { MoveRight } from "lucide-react"
 import HeaderImg from "../assets/header.svg"
 function Header() {
     return (
@@ -11,8 +12,9 @@ function Header() {
                     Take a fun & free personality quiz to find out!
                 </p>
             </div>
-            <div className="font-semibold">
+            <div className="font-semibold flex gap-x-1 items-center">
                 Take Quiz
+                <MoveRight />
             </div>
         </div>
     )

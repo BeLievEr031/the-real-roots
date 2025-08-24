@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import LogoImg from "../assets/logo.svg"
 import NavLink from "./Link"
 
@@ -30,7 +31,9 @@ const linksArr = [
 function Navbar() {
     return (
         <nav className="px-20 py-4 flex justify-between items-center">
-            <img src={LogoImg} alt="logo-img" className="w-[150px] hidden md:inline" />
+            <Link to={"/"}>
+                <img src={LogoImg} alt="logo-img" className="w-[150px] hidden md:inline" />
+            </Link>
             <div className="md:flex gap-8 hidden">
                 {
                     linksArr.map((item) => {

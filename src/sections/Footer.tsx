@@ -2,7 +2,8 @@ import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
 import LogoImg from "../assets/logo.svg"
 import AppStore from "../assets/appstore.png"
 import PlayStore from "../assets/googleplay.png"
-import Link from "../components/Link";
+import LinkItem from "../components/Link";
+import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="bg-[#e9f4ef] px-6 md:px-16 py-12">
@@ -27,24 +28,24 @@ export default function Footer() {
                 <div className="md:pl-28 grid grid-cols-2 gap-4 text-sm text-gray-700">
                     <div className="space-y-2 text-[18px]">
                         <p>
-                            <Link label="Join in your city" href="#" />
+                            <LinkItem label="Join in your city" href="#" />
                         </p>
                         <p>
-                            <Link label="Become a guide" href="#" />
+                            <LinkItem label="Become a guide" href="become-a-guide" />
                         </p>
                         <p>
-                            <Link label="Request new city" href="#" />
+                            <LinkItem label="Request new city" href="request-new-city" />
                         </p>
                     </div>
                     <div className="space-y-2 pl-15 text-[18px]">
                         <p>
-                            <Link label="FAQ" href="#" />
+                            <LinkItem label="FAQ" href="faq" />
                         </p>
                         <p>
-                            <Link label="About us" href="#" />
+                            <LinkItem label="About us" href="about" />
                         </p>
                         <p>
-                            <Link label="Gift cards" href="#" />
+                            <LinkItem label="Gift cards" href="https://app.cardivo.com/giftcards/realroots" />
                         </p>
                     </div>
                 </div>
@@ -52,9 +53,11 @@ export default function Footer() {
                 {/* Right side - Socials & App Links */}
                 <div className="flex flex-col items-start md:items-end space-y-4">
                     <div className="flex space-x-4 text-2xl text-gray-700">
-                        <a href="#"><FaInstagram /></a>
-                        <a href="#"><FaTiktok /></a>
-                        <a href="#"><FaLinkedin /></a>
+                        <Link to="https://www.instagram.com/realrootsgals/">
+                            <FaInstagram />
+                        </Link>
+                        <Link to="https://www.tiktok.com/@realrootsgals"><FaTiktok /></Link>
+                        <Link to="https://www.linkedin.com/company/therealroots/"><FaLinkedin /></Link>
                     </div>
                     <div className="space-y-3 mt-10">
                         <img src={AppStore} alt="App Store" className="w-28" />

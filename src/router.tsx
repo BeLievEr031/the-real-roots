@@ -5,6 +5,7 @@ import RequestNewCity from "./pages/RequestNewCity";
 import About from "./pages/About";
 import BecomeGuide from "./pages/BecomeGuide";
 import Partner from "./pages/Partner";
+import Faq from "./pages/Faq";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "partners",
                 element: <Partner />
+            },
+            {
+                path: "faq",
+                element: <Faq />
             },
         ]
     }
