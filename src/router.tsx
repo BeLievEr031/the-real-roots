@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import RequestNewCity from "./pages/RequestNewCity";
 import About from "./pages/About";
 import BecomeGuide from "./pages/BecomeGuide";
+import Partner from "./pages/Partner";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "become-a-guide",
                 element: <BecomeGuide />
+            },
+            {
+                path: "partners",
+                element: <Partner />
             },
         ]
     }

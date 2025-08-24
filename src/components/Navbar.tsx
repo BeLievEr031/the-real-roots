@@ -23,7 +23,7 @@ const linksArr = [
     },
     {
         label: "Partner with us",
-        href: "#"
+        href: "partners "
 
     },
 ]
