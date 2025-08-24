@@ -2,6 +2,7 @@ import QuizCard from "../components/QuizCard"
 import Card1Img from "../assets/header.svg"
 import Card2Img from "../assets/card2.svg"
 import { AndroidIcon, IPhoneIcon } from "../components/Icons"
+import QuizCaraousal from "../components/QuizCaraousal"
 function Quiz() {
     return (
         <section className="px-16 py-20">
@@ -91,6 +92,8 @@ function Quiz() {
                     }
                 />
             </div>
+
+            <QuizCaraousal />
         </section>
     )
 }
