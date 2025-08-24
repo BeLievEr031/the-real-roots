@@ -5,8 +5,8 @@ import { AndroidIcon, IPhoneIcon } from "../components/Icons"
 import QuizCaraousal from "../components/QuizCaraousal"
 function Quiz() {
     return (
-        <section className="px-16 py-20">
-            <div className="grid grid-cols-2">
+        <section className="px-4 md:px-16 py-20">
+            <div className="grid grid-cols-1 md:grid-cols-2">
 
                 <div>
                     <h2 className="uppercase font-semibold">✨ AI-Powered Personality Insights ✨</h2>
@@ -29,7 +29,7 @@ function Quiz() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-x-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-5">
                 <QuizCard
                     buttons={[
                         <button className="text-white mt-5 shadow-md bg-text-primery rounded-md border-none outline-none px-4 py-1 cursor-pointer transition-all hover:scale-95">
