@@ -8,6 +8,7 @@ import Review from "../sections/Review"
 import Banner1Img from "../assets/banner1img.avif"
 import Banner12Img from "../assets/banner2img.png"
 import Countries from "../sections/Countries"
+import Quiz from "../sections/Quiz"
 
 function Home() {
     return (
@@ -33,6 +34,7 @@ function Home() {
                 desc2="Once you join RealRoots, you’ll have a community of friends for life."
                 btntext="join now"
             />
+            <Quiz />
         </div>
     )
 }
