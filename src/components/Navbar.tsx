@@ -9,7 +9,7 @@ const linksArr = [
     },
     {
         label: "Our series",
-        href: "#"
+        href: "about"
     },
     {
         label: "Become a guide",

@@ -7,3 +7,18 @@
   --color-text-primery: oklch(28.73% 0 0);
   --color-text-light-purple: oklch(94.05% 0.02 56.69);
 }
+
+.animate {
+  /* ... */
+  will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
+  animation: scrolling 40s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
