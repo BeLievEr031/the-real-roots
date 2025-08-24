@@ -47,7 +47,7 @@ function Navbar() {
                     })
                 }
             </div>
-            <button onClick={() => setOpen(!open)} >
+            <button onClick={() => setOpen(!open)} className="md:hidden">
                 {!open ? <Menu /> : <X />}
             </button>
 
