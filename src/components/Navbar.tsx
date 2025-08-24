@@ -1,6 +1,5 @@
 import LogoImg from "../assets/logo.svg"
 import NavLink from "./Link"
-import Link from "./Link"
 
 
 const linksArr = [
